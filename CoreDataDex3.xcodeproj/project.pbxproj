@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		D82B4D0E2C888D0C0048507C /* FetchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82B4D0D2C888D0C0048507C /* FetchController.swift */; };
 		D83133812C85EC3200F095EA /* TempPokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83133802C85EC3200F095EA /* TempPokemon.swift */; };
+		D834F7942C89DE7D00DD3218 /* PokemonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D834F7932C89DE7D00DD3218 /* PokemonViewModel.swift */; };
 		D8E1FD532C81F29600EE6C5F /* CoreDataDex3App.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E1FD522C81F29600EE6C5F /* CoreDataDex3App.swift */; };
 		D8E1FD552C81F29600EE6C5F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E1FD542C81F29600EE6C5F /* ContentView.swift */; };
 		D8E1FD572C81F29800EE6C5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8E1FD562C81F29800EE6C5F /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 /* Begin PBXFileReference section */
 		D82B4D0D2C888D0C0048507C /* FetchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchController.swift; sourceTree = "<group>"; };
 		D83133802C85EC3200F095EA /* TempPokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempPokemon.swift; sourceTree = "<group>"; };
+		D834F7932C89DE7D00DD3218 /* PokemonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonViewModel.swift; sourceTree = "<group>"; };
 		D8E1FD4F2C81F29600EE6C5F /* CoreDataDex3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataDex3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8E1FD522C81F29600EE6C5F /* CoreDataDex3App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataDex3App.swift; sourceTree = "<group>"; };
 		D8E1FD542C81F29600EE6C5F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				D8E1FD542C81F29600EE6C5F /* ContentView.swift */,
 				D83133802C85EC3200F095EA /* TempPokemon.swift */,
 				D82B4D0D2C888D0C0048507C /* FetchController.swift */,
+				D834F7932C89DE7D00DD3218 /* PokemonViewModel.swift */,
 				D8E1FD5B2C81F29800EE6C5F /* Persistence.swift */,
 				D8E1FD5D2C81F29800EE6C5F /* CoreDataDex3.xcdatamodeld */,
 				D8E1FD562C81F29800EE6C5F /* Assets.xcassets */,
@@ -152,6 +155,7 @@
 				D8E1FD5F2C81F29800EE6C5F /* CoreDataDex3.xcdatamodeld in Sources */,
 				D8E1FD5C2C81F29800EE6C5F /* Persistence.swift in Sources */,
 				D82B4D0E2C888D0C0048507C /* FetchController.swift in Sources */,
+				D834F7942C89DE7D00DD3218 /* PokemonViewModel.swift in Sources */,
 				D83133812C85EC3200F095EA /* TempPokemon.swift in Sources */,
 				D8E1FD552C81F29600EE6C5F /* ContentView.swift in Sources */,
 				D8E1FD532C81F29600EE6C5F /* CoreDataDex3App.swift in Sources */,

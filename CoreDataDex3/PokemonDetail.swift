@@ -15,7 +15,7 @@ struct PokemonDetail: View {
     var body: some View {
         ScrollView {
             ZStack {
-                Image(pokemon.background)
+                Image("normalgrasselectricpoisonfairy")
                     .resizable()
                     .scaledToFit()
                     .shadow(color: .black, radius: 6)

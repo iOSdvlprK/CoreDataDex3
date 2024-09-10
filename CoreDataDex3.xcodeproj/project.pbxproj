@@ -13,6 +13,7 @@
 		D85616C72C8F433200D72189 /* Pokemon+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85616C62C8F433200D72189 /* Pokemon+Ext.swift */; };
 		D8B75F562C8B505600100C49 /* PokemonDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B75F552C8B505600100C49 /* PokemonDetail.swift */; };
 		D8B75F582C8B57B500100C49 /* SamplePokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B75F572C8B57B500100C49 /* SamplePokemon.swift */; };
+		D8D228AF2C90749900077BA0 /* Stats.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D228AE2C90749900077BA0 /* Stats.swift */; };
 		D8E1FD532C81F29600EE6C5F /* CoreDataDex3App.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E1FD522C81F29600EE6C5F /* CoreDataDex3App.swift */; };
 		D8E1FD552C81F29600EE6C5F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E1FD542C81F29600EE6C5F /* ContentView.swift */; };
 		D8E1FD572C81F29800EE6C5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8E1FD562C81F29800EE6C5F /* Assets.xcassets */; };
@@ -28,6 +29,7 @@
 		D85616C62C8F433200D72189 /* Pokemon+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Pokemon+Ext.swift"; sourceTree = "<group>"; };
 		D8B75F552C8B505600100C49 /* PokemonDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonDetail.swift; sourceTree = "<group>"; };
 		D8B75F572C8B57B500100C49 /* SamplePokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SamplePokemon.swift; sourceTree = "<group>"; };
+		D8D228AE2C90749900077BA0 /* Stats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stats.swift; sourceTree = "<group>"; };
 		D8E1FD4F2C81F29600EE6C5F /* CoreDataDex3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataDex3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8E1FD522C81F29600EE6C5F /* CoreDataDex3App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataDex3App.swift; sourceTree = "<group>"; };
 		D8E1FD542C81F29600EE6C5F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 				D8E1FD522C81F29600EE6C5F /* CoreDataDex3App.swift */,
 				D8E1FD542C81F29600EE6C5F /* ContentView.swift */,
 				D8B75F552C8B505600100C49 /* PokemonDetail.swift */,
+				D8D228AE2C90749900077BA0 /* Stats.swift */,
 				D8B75F572C8B57B500100C49 /* SamplePokemon.swift */,
 				D83133802C85EC3200F095EA /* TempPokemon.swift */,
 				D82B4D0D2C888D0C0048507C /* FetchController.swift */,
@@ -162,6 +165,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8E1FD5F2C81F29800EE6C5F /* CoreDataDex3.xcdatamodeld in Sources */,
+				D8D228AF2C90749900077BA0 /* Stats.swift in Sources */,
 				D8E1FD5C2C81F29800EE6C5F /* Persistence.swift in Sources */,
 				D8B75F562C8B505600100C49 /* PokemonDetail.swift in Sources */,
 				D85616C72C8F433200D72189 /* Pokemon+Ext.swift in Sources */,

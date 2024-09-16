@@ -7,14 +7,35 @@
 
 import WidgetKit
 import SwiftUI
+import CoreData
 
 struct Provider: TimelineProvider {
+    var randomPokemon: Pokemon {
+        let context = PersistenceController.shared.container.viewContext
+        
+        let fetchRequest: NSFetchRequest<Pokemon> = Pokemon.fetchRequest()
+        
+        var results: [Pokemon] = []
+        
+        do {
+            results = try context.fetch(fetchRequest)
+        } catch {
+            print("Couldn't fetch: \(error)")
+        }
+        
+        if let randomPokemon = results.randomElement() {
+            return randomPokemon
+        }
+        
+        return SamplePokemon.samplePokemon
+    }
+    
     func placeholder(in context: Context) -> SimpleEntry {
-        SimpleEntry(date: Date(), emoji: "😀")
+        SimpleEntry(date: Date(), pokemon: SamplePokemon.samplePokemon)
     }
 
     func getSnapshot(in context: Context, completion: @escaping (SimpleEntry) -> ()) {
-        let entry = SimpleEntry(date: Date(), emoji: "😀")
+        let entry = SimpleEntry(date: Date(), pokemon: randomPokemon)
         completion(entry)
     }
 
@@ -25,7 +46,7 @@ struct Provider: TimelineProvider {
         let currentDate = Date()
         for hourOffset in 0 ..< 5 {
             let entryDate = Calendar.current.date(byAdding: .hour, value: hourOffset, to: currentDate)!
-            let entry = SimpleEntry(date: entryDate, emoji: "😀")
+            let entry = SimpleEntry(date: entryDate, pokemon: randomPokemon)
             entries.append(entry)
         }
 
@@ -36,19 +57,30 @@ struct Provider: TimelineProvider {
 
 struct SimpleEntry: TimelineEntry {
     let date: Date
-    let emoji: String
+    let pokemon: Pokemon
 }
 
 struct CoreDataDex3WidgetEntryView : View {
+    @Environment(\.widgetFamily) var widgetSize
     var entry: Provider.Entry
 
     var body: some View {
-        VStack {
-            Text("Time:")
-            Text(entry.date, style: .time)
-
-            Text("Emoji:")
-            Text(entry.emoji)
+        switch widgetSize {
+        case .systemSmall:
+            WidgetPokemon(widgetSize: .small)
+                .environmentObject(entry.pokemon)
+            
+        case .systemMedium:
+            WidgetPokemon(widgetSize: .medium)
+                .environmentObject(entry.pokemon)
+            
+        case .systemLarge:
+            WidgetPokemon(widgetSize: .large)
+                .environmentObject(entry.pokemon)
+            
+        default:
+            WidgetPokemon(widgetSize: .large)
+                .environmentObject(entry.pokemon)
         }
     }
 }
@@ -75,6 +107,6 @@ struct CoreDataDex3Widget: Widget {
 #Preview(as: .systemSmall) {
     CoreDataDex3Widget()
 } timeline: {
-    SimpleEntry(date: .now, emoji: "😀")
-    SimpleEntry(date: .now, emoji: "🤩")
+    SimpleEntry(date: .now, pokemon: SamplePokemon.samplePokemon)
+    SimpleEntry(date: .now, pokemon: SamplePokemon.samplePokemon)
 }

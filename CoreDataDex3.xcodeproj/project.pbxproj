@@ -74,6 +74,8 @@
 		D864049A2C9718CE00B08080 /* CoreDataDex3Widget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataDex3Widget.swift; sourceTree = "<group>"; };
 		D864049C2C9718D200B08080 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D864049E2C9718D200B08080 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D89BC2DC2C98672D000073FA /* CoreDataDex3.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CoreDataDex3.entitlements; sourceTree = "<group>"; };
+		D89BC2DD2C986C26000073FA /* CoreDataDex3WidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CoreDataDex3WidgetExtension.entitlements; sourceTree = "<group>"; };
 		D8B75F552C8B505600100C49 /* PokemonDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonDetail.swift; sourceTree = "<group>"; };
 		D8B75F572C8B57B500100C49 /* SamplePokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SamplePokemon.swift; sourceTree = "<group>"; };
 		D8D228AE2C90749900077BA0 /* Stats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stats.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 		D86404972C9718CE00B08080 /* CoreDataDex3Widget */ = {
 			isa = PBXGroup;
 			children = (
+				D89BC2DD2C986C26000073FA /* CoreDataDex3WidgetExtension.entitlements */,
 				D86404982C9718CE00B08080 /* CoreDataDex3WidgetBundle.swift */,
 				D864049A2C9718CE00B08080 /* CoreDataDex3Widget.swift */,
 				D864049C2C9718D200B08080 /* Assets.xcassets */,
@@ -148,6 +151,7 @@
 		D8E1FD512C81F29600EE6C5F /* CoreDataDex3 */ = {
 			isa = PBXGroup;
 			children = (
+				D89BC2DC2C98672D000073FA /* CoreDataDex3.entitlements */,
 				D8E1FD522C81F29600EE6C5F /* CoreDataDex3App.swift */,
 				D8E1FD542C81F29600EE6C5F /* ContentView.swift */,
 				D8B75F552C8B505600100C49 /* PokemonDetail.swift */,
@@ -323,8 +327,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = CoreDataDex3Widget/CoreDataDex3WidgetExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6767JQ5J7N;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CoreDataDex3Widget/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = CoreDataDex3Widget;
@@ -349,8 +355,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = CoreDataDex3Widget/CoreDataDex3WidgetExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6767JQ5J7N;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CoreDataDex3Widget/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = CoreDataDex3Widget;
@@ -495,9 +503,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CoreDataDex3/CoreDataDex3.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CoreDataDex3/Preview Content\"";
+				DEVELOPMENT_TEAM = 6767JQ5J7N;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -524,9 +534,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CoreDataDex3/CoreDataDex3.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CoreDataDex3/Preview Content\"";
+				DEVELOPMENT_TEAM = 6767JQ5J7N;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

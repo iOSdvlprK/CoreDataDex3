@@ -99,6 +99,7 @@ struct CoreDataDex3Widget: Widget {
                     .background()
             }
         }
+        .contentMarginsDisabled()
         .configurationDisplayName("My Widget")
         .description("This is an example widget.")
     }
